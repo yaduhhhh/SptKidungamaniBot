@@ -17,16 +17,16 @@ class Config:
     GROUPS = [
         {
             'id': -1001877948436,
-            'name': '💖xsss😍🥵',
-            'price': '250',
-            'pics': ['https://graph.org/file/b3e4926a5bfb28eb40b25.jpg', 'https://graph.org/file/e0d4f1632034b89a5128a.jpg', 'https://graph.org/file/406d485ab06e2c3005599.jpg']                                                             
+            'name': '🤩🔞𝐊𝐢𝐝𝐮𝐧𝐠𝐚𝐦𝐚𝐧𝐢 𝐔𝐋𝐓𝐑𝐀🌼',
+            'price': '350',
+            'pics': ['https://graph.org/file/58a143c3adc6aa70b3a1b.jpg', 'https://graph.org/file/2c423c90cf9051fd3d07f.jpg']                                                             
             
         },
         {
             'id': -1001828457115,
-            'name': '💋മല്ലു താത്ത 🍑',
+            'name': '🌼Tango🔞',
             'price': '200',
-            'pics': ['https://graph.org/file/f3338ef1912c07003d588.jpg', 'https://graph.org/file/ef7359af4ddb98cfd5e82.jpg', 'https://graph.org/file/94fd83977fda112729af8.jpg']
+            'pics': ['https://graph.org/file/4652ece5d300948417c2f.jpg', 'https://graph.org/file/c66654d35a8dbc4b0b22e.jpg']
         }
     ]
 
