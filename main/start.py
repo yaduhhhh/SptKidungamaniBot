@@ -70,7 +70,7 @@ async def cb_func(client, query):
         btn = [[
                 InlineKeyboardButton(f"ᴩᴀʏ {grp_data['price']}₹", f"buy+{group_id}")
                 ],[
-                InlineKeyboardButton('DEMO ᴩɪᴄꜱ 🫦', f'pics+{group_id}')
+                InlineKeyboardButton("DEMO ᴩɪᴄꜱ 🫦", f'pics+{group_id}')
                 ],[
                 InlineKeyboardButton('⭐Contact Admin', user_id=7157859848)
                 ],[
