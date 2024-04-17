@@ -67,7 +67,7 @@ async def cb_func(client, query):
                 ],[
                 InlineKeyboardButton('DEMO ᴩɪᴄꜱ 🫦', f'pics+{group_id}')
                 ],[
-                InlineKeyboardButton('ᴀᴅᴍɪɴ', user_id=7157859848)
+                InlineKeyboardButton('⭐Contact Admin', user_id=7157859848)
                 ],[
                 InlineKeyboardButton("✘ ᴄʟᴏꜱᴇ", "close"),
                 InlineKeyboardButton("◀️ ʙᴀᴄᴋ", "start")
@@ -88,7 +88,7 @@ async def cb_func(client, query):
         grp_data = Config.GROUPS[group_id]
         
         btn = InlineKeyboardMarkup([[
-            InlineKeyboardButton('ᴀᴅᴍɪɴ', user_id=7157859848)
+            InlineKeyboardButton('⭐Contact Admin', user_id=7157859848)
         ]])
        
         txt = Txt.PAY_TEXT.format(price=grp_data['price'], upi=Config.UPI_ID)
@@ -96,7 +96,7 @@ async def cb_func(client, query):
         proof = await client.listen_message(user_id) #, filters=filters.photo)
         if proof.text:
             if proof.text == '/cancel':
-                return await proof.reply("Transaction Cancelled!", quote=True)
+                return await proof.reply("Transaction Cancelled! Tap /start", quote=True)
                 return await query.message.delete()
             await proof.reply('This Is Text Message. Please Send Screen Shot Of Your Payment. Try Again', quote=True)
             return await query.message.delete()
@@ -112,7 +112,7 @@ async def cb_func(client, query):
             caption=Txt.PAY_VERFY_TXT.format(user.mention, user.id, grp_data['name'], grp_data['price']),
             reply_markup=button,
         )
-        await proof.reply('Your Proof Is Submitted ✓ admin will verify within 24hr', quote=True)
+        await proof.reply('Your Proof Is Submitted ✓ admin will verify within MINUTES', quote=True)
       
      
     elif data.startswith('verify'):
@@ -125,7 +125,7 @@ async def cb_func(client, query):
             return await query.answer("I Can't Create The Link 🥲 Maybe I am Not Admin In This Group. Make Me Admin", show_alert=True)
            
         try:
-            await client.send_message(int(us_id), f"Enjoy 🫦\n\nAdmin Is Accepted Your Payment\nHere Is Your Link: {link.invite_link}\n⚠️One Time Link")
+            await client.send_message(int(us_id), f"Enjoy 🫦\n\nAdmin Accepted Your Payment\nHere Is Your Link: {link.invite_link}\n⚠️One Time Link")
         except:
             await query.answer('I think This pottan is blocked thr bot 😑 so direct share the link', show_alert=True)
        
@@ -134,7 +134,7 @@ async def cb_func(client, query):
     elif data.startswith('reject'):
         uid = int(data.split('+', 1)[1])
         try:
-            btn = [[InlineKeyboardButton('ᴀᴅᴍɪɴ', user_id=7157859848)]]
+            btn = [[InlineKeyboardButton('⭐Contact Admin', user_id=7157859848)]]
             await client.send_message(uid, "Your Transaction Is Declined! Your Payment Is Not Received. Contact Admin", reply_markup=InlineKeyboardMarkup(btn))
         except:
             await query.answer('He Is Blocked The Bot!')
