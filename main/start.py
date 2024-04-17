@@ -37,7 +37,8 @@ async def cb_handler(c, q):
         await asyncio.sleep(x.value)
         await cb_func(c, q)
     except Exception:
-        pass
+        await q.answer(Exception)
+        print(Exception)
 
 
 
