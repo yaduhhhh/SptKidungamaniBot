@@ -67,6 +67,10 @@ async def cb_func(client, query):
                 ],[
                 InlineKeyboardButton('ꜱʜᴏᴡ ᴩɪᴄꜱ 🫦', f'pics+{group_id}')
                 ],[
+                InlineKeyboardButton(f"ᴩᴀʏ {grp_data['price']}₹", f"buy+{group_id}")
+                ],[
+                InlineKeyboardButton('ꜱʜᴏᴡ ᴩɪᴄꜱ 🫦', f'pics+{group_id}')
+                ],[
                 InlineKeyboardButton('ᴀᴅᴍɪɴ', user_id=6164338004)
                 ],[
                 InlineKeyboardButton("✘ ᴄʟᴏꜱᴇ", "close"),
