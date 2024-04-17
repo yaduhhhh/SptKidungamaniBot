@@ -69,18 +69,18 @@ class Txt:
  
 » {grp}
 <i>
-✅ • Daily Updated
+✅ • Daily Videos Updated
 ✅ • iOS supported
-✅ • Full Direct Videos 
-✅ • Rare Collections
+✅ • Full Direct Videos
+✅ • Rare Collections & Hot Collections
 ✅ • Mallu aunty, Girls, etc… available 
 </i>
 
-Many more features 👍🏻
+🔞Many more features 👍🏻
 
 Price: {price}
 
-Click Pay Button & Pay The Amount And Enjoy 🫦</b>"""
+Click Pay Button, Pay The Amount And JOIN 🫦</b>"""
 
     PAY_TEXT = """ᴩᴀʏ {price} ᴛᴏ <code>{upi}</code> ᴏʀ ᴀʙᴏᴜᴠᴇ ǫʀ ᴄᴏᴅᴇ.
 
