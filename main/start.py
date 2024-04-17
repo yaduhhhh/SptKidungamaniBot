@@ -70,8 +70,6 @@ async def cb_func(client, query):
         btn = [[
                 InlineKeyboardButton(f"ᴩᴀʏ {grp_data['price']}₹", f"buy+{group_id}")
                 ],[
-                InlineKeyboardButton('ᴩᴀʏ now', f'url=https://pay.mypaylink.in?q=TbjRUn)
-                ],[
                 InlineKeyboardButton('DEMO ᴩɪᴄꜱ 🫦', f'pics+{group_id}')
                 ],[
                 InlineKeyboardButton('⭐Contact Admin', user_id=7157859848)
@@ -93,11 +91,11 @@ async def cb_func(client, query):
     elif data.startswith("buy"):
         group_id = int(data.split('+', 1)[1])
         grp_data = GROUPS[group_id]
-        #payment_url = f"https://pay.mypaylink.in?q=TbjRUn"
+        payment_url = f"http://upi://pay?pa=BHARATPE09912974503@yesbankltd&pn={grp_data['paynote']}&cu=INR&am={grp_data['price']}"
         
         btn = InlineKeyboardMarkup([[
-            #InlineKeyboardButton('Direct Pay', url=payment_url)
-            #],[
+            InlineKeyboardButton('Direct Pay', url=payment_url)
+            ],[
             InlineKeyboardButton('⭐Contact Admin', user_id=7157859848)
         ]])
        
