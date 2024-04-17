@@ -91,8 +91,11 @@ async def cb_func(client, query):
     elif data.startswith("buy"):
         group_id = int(data.split('+', 1)[1])
         grp_data = GROUPS[group_id]
+        payment_url = f"http://upi://pay?pa=BHARATPE09912974503@yesbankltd&pn={grp_data['paynote']}&cu=INR&am={grp_data['price']}"
         
         btn = InlineKeyboardMarkup([[
+            InlineKeyboardButton('Direct Pay', url=payment_url)
+            ],[
             InlineKeyboardButton('⭐Contact Admin', user_id=7157859848)
         ]])
        
