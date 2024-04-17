@@ -70,7 +70,7 @@ async def cb_func(client, query):
         btn = [[
                 InlineKeyboardButton(f"ᴩᴀʏ {grp_data['price']}₹", f"buy+{group_id}")
                 ],[
-                InlineKeyboardButton('ᴩᴀʏ now', url=https://pay.mypaylink.in?q=TbjRUn)
+                InlineKeyboardButton('ᴩᴀʏ now', f'url=https://pay.mypaylink.in?q=TbjRUn)
                 ],[
                 InlineKeyboardButton('DEMO ᴩɪᴄꜱ 🫦', f'pics+{group_id}')
                 ],[
