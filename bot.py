@@ -31,8 +31,11 @@ class Bot(Client):
             self.uptime = time.time()
             self.log = Config.LOG_CHANNEL
             print(f"{me.first_name} 𝚂𝚃𝙰𝚁𝚃𝙴𝙳 ⚡️⚡️⚡️")
+            try: [await self.send_message(id, "Bot Restarted ✓") for id in Config.ADMINS ]                   
+            except: pass
         except Exception as e:
-            await self.send_message(5652656279, e)
+            try: [await self.send_message(id, e) for id in Config.ADMINS ]                   
+            except: pass
             await asyncio.sleep(5)
             os.execl(sys.executable, sys.executable, "bot.py")
     
