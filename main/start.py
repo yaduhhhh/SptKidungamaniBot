@@ -6,18 +6,18 @@ from pyrogram.errors import FloodWait, MessageNotModified
 from config import Config, Txt
 from helper.database import db
 from helper.utils import humanbytes
-
+from .groups import GROUPS
 
 @Client.on_message(filters.private & filters.command("start"))
 async def start(c, m): 
     user_id = m.from_user.id
     await db.add_user(user_id)
     btn = []
-    for group in Config.GROUPS:
-        btn.append([
-            InlineKeyboardButton(group['name'], f"grp+{Config.GROUPS.index(group)}")
-        ])
-       
+    for group in range(0, len(GROUPS), 2):
+        row = []
+        row.append(InlineKeyboardButton(GROUPS[group]['name'], f"grp+{group}"))
+        btn.append(row)
+        
     btn.append([InlineKeyboardButton('How To Buy', 'tutorial')])
     photo="https://graph.org/file/e0f0fec6d0b088c41a644.jpg"   
     return await m.reply_photo(photo, caption=Txt.START_TXT.format(m.from_user.mention), parse_mode=enums.ParseMode.HTML, reply_markup=InlineKeyboardMarkup(btn))       
@@ -44,10 +44,11 @@ async def cb_func(client, query):
     user_id = query.from_user.id
     if data == "start":    
         btn = []
-        for group in Config.GROUPS:
-            btn.append([
-                InlineKeyboardButton(group['name'], f"grp+{Config.GROUPS.index(group)}")
-            ])
+        for group in range(0, len(GROUPS), 2):
+            row = []
+            row.append(InlineKeyboardButton(GROUPS[group]['name'], f"grp+{group}"))
+            btn.append(row)
+            
         btn.append([InlineKeyboardButton('How To Buy', 'tutorial')])
         photo="https://graph.org/file/e0f0fec6d0b088c41a644.jpg"   
         await query.edit_message_media(InputMediaPhoto(photo, Txt.START_TXT.format(query.from_user.mention), enums.ParseMode.HTML), InlineKeyboardMarkup(btn))
@@ -60,7 +61,7 @@ async def cb_func(client, query):
            
     elif data.startswith("grp"):
         group_id = int(data.split('+', 1)[1])
-        grp_data = Config.GROUPS[group_id]
+        grp_data = GROUPS[group_id]
         
         btn = [[
                 InlineKeyboardButton(f"ᴩᴀʏ {grp_data['price']}₹", f"buy+{group_id}")
@@ -78,14 +79,14 @@ async def cb_func(client, query):
   
     elif data.startswith('pics'):
         group_id = int(data.split('+', 1)[1])
-        grp_data = Config.GROUPS[group_id]
+        grp_data = GROUPS[group_id]
         media = [InputMediaPhoto(pic) for pic in grp_data['pics']]
         send = await client.send_media_group(user_id, media=media)
         await send[0].edit(f"👆 DEMO Of {grp_data['name']}")
        
     elif data.startswith("buy"):
         group_id = int(data.split('+', 1)[1])
-        grp_data = Config.GROUPS[group_id]
+        grp_data = GROUPS[group_id]
         
         btn = InlineKeyboardMarkup([[
             InlineKeyboardButton('⭐Contact Admin', user_id=7157859848)
@@ -117,7 +118,7 @@ async def cb_func(client, query):
      
     elif data.startswith('verify'):
         data, us_id, group_id = data.split('_', 2)
-        ch_id = Config.GROUPS[int(group_id)]['id']
+        ch_id = GROUPS[int(group_id)]['id']
         
         try:
             link = await client.create_chat_invite_link(int(ch_id), member_limit=1) 
