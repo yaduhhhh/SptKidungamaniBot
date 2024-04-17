@@ -67,7 +67,7 @@ async def cb_func(client, query):
                 ],[
                 InlineKeyboardButton('ꜱʜᴏᴡ ᴩɪᴄꜱ 🫦', f'pics+{group_id}')
                 ],[
-                InlineKeyboardButton('ᴀᴅᴍɪɴ', user_id=7157859848)
+                InlineKeyboardButton('ᴀᴅᴍɪɴ', user_id=6164338004)
                 ],[
                 InlineKeyboardButton("✘ ᴄʟᴏꜱᴇ", "close"),
                 InlineKeyboardButton("◀️ ʙᴀᴄᴋ", "start")
@@ -88,7 +88,7 @@ async def cb_func(client, query):
         grp_data = Config.GROUPS[group_id]
         
         btn = InlineKeyboardMarkup([[
-            InlineKeyboardButton('ᴀᴅᴍɪɴ', user_id=7157859848)
+            InlineKeyboardButton('ᴀᴅᴍɪɴ', user_id=6164338004)
         ]])
        
         txt = Txt.PAY_TEXT.format(price=grp_data['price'], upi=Config.UPI_ID)
