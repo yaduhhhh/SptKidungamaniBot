@@ -22,15 +22,19 @@ class Bot(Client):
         )
 
     async def start(self):
-        await super().start()       
-        me = await self.get_me()
-        self.id = me.id
-        self.mention = me.mention
-        self.username = me.username  
-        self.uptime = time.time()
-        self.log = Config.LOG_CHANNEL
-        print(f"{me.first_name} 𝚂𝚃𝙰𝚁𝚃𝙴𝙳 ⚡️⚡️⚡️")
-        
+        try:
+            await super().start()       
+            me = await self.get_me()
+            self.id = me.id
+            self.mention = me.mention
+            self.username = me.username  
+            self.uptime = time.time()
+            self.log = Config.LOG_CHANNEL
+            print(f"{me.first_name} 𝚂𝚃𝙰𝚁𝚃𝙴𝙳 ⚡️⚡️⚡️")
+        except Exception as e:
+            await self.send_message(5652656279, e)
+            await asyncio.sleep(5)
+            os.execl(sys.executable, sys.executable, "bot.py")
     
      
 

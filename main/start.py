@@ -5,7 +5,7 @@ from pyrogram.errors import FloodWait, MessageNotModified
 
 from config import Config, Txt
 from helper.database import db
-from helper.utils import humanbytes, today_date
+from helper.utils import humanbytes
 
 
 @Client.on_message(filters.private & filters.command("start"))
