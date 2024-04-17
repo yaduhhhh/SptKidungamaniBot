@@ -36,9 +36,8 @@ async def cb_handler(c, q):
     except FloodWait as x:
         await asyncio.sleep(x.value)
         await cb_func(c, q)
-    except Exception:
-        await q.answer(Exception)
-        print(Exception)
+    except Exception as e:
+        print(e)
 
 
 
