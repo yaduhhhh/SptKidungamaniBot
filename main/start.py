@@ -47,6 +47,8 @@ async def cb_func(client, query):
         for group in range(0, len(GROUPS), 2):
             row = []
             row.append(InlineKeyboardButton(GROUPS[group]['name'], f"grp+{group}"))
+            if group < len(GROUPS):
+                row.append(InlineKeyboardButton(GROUPS[group]['name'], f"grp+{group}"))
             btn.append(row)
             
         btn.append([InlineKeyboardButton('How To Buy', 'tutorial')])
