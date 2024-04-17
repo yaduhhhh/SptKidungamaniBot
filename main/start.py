@@ -81,7 +81,7 @@ async def cb_func(client, query):
         grp_data = Config.GROUPS[group_id]
         media = [InputMediaPhoto(pic) for pic in grp_data['pics']]
         send = await client.send_media_group(user_id, media=media)
-        await send[0].edit(f"👆 DEMO Of {grp_data['name']}")
+        await send[0].edit(f"👆 Pics Of {grp_data['name']}")
        
     elif data.startswith("buy"):
         group_id = int(data.split('+', 1)[1])
@@ -96,7 +96,7 @@ async def cb_func(client, query):
         proof = await client.listen_message(user_id) #, filters=filters.photo)
         if proof.text:
             if proof.text == '/cancel':
-                return await proof.reply("Transaction Cancelled! Click /start", quote=True)
+                return await proof.reply("Transaction Cancelled!", quote=True)
                 return await query.message.delete()
             await proof.reply('This Is Text Message. Please Send Screen Shot Of Your Payment. Try Again', quote=True)
             return await query.message.delete()
@@ -125,9 +125,9 @@ async def cb_func(client, query):
             return await query.answer("I Can't Create The Link 🥲 Maybe I am Not Admin In This Group. Make Me Admin", show_alert=True)
            
         try:
-            await client.send_message(int(us_id), f"Enjoy 🫦\n\nWELCOME TO KIDUNGAMANI, You are now VIP MEMBER\nHere Is Your Link: {link.invite_link}\n⚠️One Time Link")
+            await client.send_message(int(us_id), f"Enjoy 🫦\n\nAdmin Is Accepted Your Payment\nHere Is Your Link: {link.invite_link}\n⚠️One Time Link")
         except:
-            await query.answer('I think This pottan is blocked 😑 so direct share the link', show_alert=True)
+            await query.answer('I think This pottan is blocked thr bot 😑 so direct share the link', show_alert=True)
        
         return await query.edit_message_reply_markup(InlineKeyboardMarkup([[InlineKeyboardButton('Verified ✅', 'dummy')]]))
        
