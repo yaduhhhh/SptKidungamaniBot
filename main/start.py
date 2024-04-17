@@ -67,7 +67,7 @@ async def cb_func(client, query):
                 ],[
                 InlineKeyboardButton('ꜱʜᴏᴡ ᴩɪᴄꜱ 🫦', f'pics+{group_id}')
                 ],[
-                InlineKeyboardButton('ᴀᴅᴍɪɴ', user_id=6164338004)
+                InlineKeyboardButton('ᴀᴅᴍɪɴ', user_id=7157859848)
                 ],[
                 InlineKeyboardButton("✘ ᴄʟᴏꜱᴇ", "close"),
                 InlineKeyboardButton("◀️ ʙᴀᴄᴋ", "start")
@@ -88,7 +88,7 @@ async def cb_func(client, query):
         grp_data = Config.GROUPS[group_id]
         
         btn = InlineKeyboardMarkup([[
-            InlineKeyboardButton('ᴀᴅᴍɪɴ', user_id=6164338004)
+            InlineKeyboardButton('ᴀᴅᴍɪɴ', user_id=7157859848)
         ]])
        
         txt = Txt.PAY_TEXT.format(price=grp_data['price'], upi=Config.UPI_ID)
@@ -134,7 +134,7 @@ async def cb_func(client, query):
     elif data.startswith('reject'):
         uid = int(data.split('+', 1)[1])
         try:
-            btn = [[InlineKeyboardButton('ᴀᴅᴍɪɴ', user_id=6164338004)]]
+            btn = [[InlineKeyboardButton('ᴀᴅᴍɪɴ', user_id=7157859848)]]
             await client.send_message(uid, "Your Transaction Is Declined! Your Payment Is Not Received. Contact Admin", reply_markup=InlineKeyboardMarkup(btn))
         except:
             await query.answer('He Is Blocked The Bot!')
