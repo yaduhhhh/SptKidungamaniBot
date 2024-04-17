@@ -96,7 +96,7 @@ async def cb_func(client, query):
         btn = InlineKeyboardMarkup([[
             #InlineKeyboardButton('Direct Pay', url=payment_url)
             #],[
-            InlineKeyboardButton('⭐Contact Admin', user_id=7157859848)
+            InlineKeyboardButton('Direct Pay', url=payment_url)
         ]])
        
         txt = Txt.PAY_TEXT.format(price=grp_data['price'], upi=Config.UPI_ID)
