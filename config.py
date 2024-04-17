@@ -17,7 +17,7 @@ class Config:
     GROUPS = [
         {
             'id': -1001877948436,
-            'name': '💖 ultra max😍🥵',
+            'name': '💖xsss😍🥵',
             'price': '250',
             'pics': ['https://graph.org/file/b3e4926a5bfb28eb40b25.jpg', 'https://graph.org/file/e0d4f1632034b89a5128a.jpg', 'https://graph.org/file/406d485ab06e2c3005599.jpg']                                                             
             
