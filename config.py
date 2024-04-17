@@ -24,16 +24,40 @@ class Config:
         },
         {
             'id': -1001828457115,
-            'name': '🌼Tango🔞',
+            'name': '🌺𝙍𝙀𝙎𝙃𝙈𝙄 𝙉𝘼𝙄𝙍🥵',
             'price': '200',
+            'pics': ['https://telegra.ph/file/973ea89b4880a082c0a5c.jpg', 'https://telegra.ph/file/ded94bafb8644a7c83974.jpg']
+        },
+        {
+            'id': -1001828457115,
+            'name': '🦋𝙉𝙄𝙇𝘼 𝙉𝘼𝙉𝘽𝙄𝘼𝙍😍',
+            'price': '200',
+            'pics': ['https://graph.org/file/5b892a958d7b5657bb48c.jpg', 'https://graph.org/file/8aae552e09d3cac73d6f3.jpg']
+        },
+        {
+            'id': -1001828457115,
+            'name': '🍑𝙏𝘼𝙉𝙂𝙊🔥',
+            'price': '100',
             'pics': ['https://graph.org/file/4652ece5d300948417c2f.jpg', 'https://graph.org/file/c66654d35a8dbc4b0b22e.jpg']
+        },
+        {
+            'id': -1001828457115,
+            'name': '🌼𝙒𝙀𝘽𝙎𝙀𝙍𝙄𝙀𝙎💖',
+            'price': '100',
+            'pics': ['https://graph.org/file/52c458e50c0ae24236bd2.jpg', 'https://graph.org/file/2986260c5201fcc3d7b06.jpg']
+        },
+        {
+            'id': -1001828457115,
+            'name': '🍌𝙁𝙊𝙍𝙀𝙄𝙂𝙉💦',
+            'price': '200',
+            'pics': ['https://graph.org/file/9a80686fff389d83fc37b.jpg', 'https://graph.org/file/d388bbe7d05d02b611e68.jpg']
         }
     ]
 
 
 class Txt:
     
-    START_TXT = """ഹലോ 🙌, നിങ്ങൾക് ഇഷ്ടമുള്ള ഗ്രുപ്പ് select ചെയ്യുക. Select The Group You Wanted 🫦🫦"""   
+    START_TXT = """Hello🙌,\nSelect The Group You Wanted 🫦🫦\n\nനിങ്ങൾക് ഇഷ്ടമുള്ള ഗ്രുപ്പ് select ചെയ്യുക."""   
    
     GRP_PRM = """<b>Hey {us} ✨️</b>
 
