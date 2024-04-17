@@ -1,0 +1,13 @@
+git+https://github.com/MKN-BOTZ/pyrogram  
+tgcrypto==1.2.5
+dnspython==2.3.0
+pyropatch==2.1 
+motor==3.3.1
+aiofiles==23.1.0
+psutil
+
+
+
+
+
+
