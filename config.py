@@ -9,8 +9,8 @@ class Config:
     DB_NAME = "Cluster0"
     DB_URL = "mongodb+srv://DB:DB@cluster0.oaxbpow.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"     
     LOG_CHANNEL = int(-1001922417490)
-    QR_CODE = "https://graph.org/file/dbfa780e08331626a33e5.jpg"
-    UPI_ID = "yadu.r@paytm"
+    QR_CODE = "https://graph.org/file/a927c5c5c24622eb95462.jpg"
+    UPI_ID = "vip8kidungamani@axl"
     TUTORIAL = "BAACAgUAAxkBAAImjGX6ixng9CxtwE3hzgGJ-Mnvt5wMAAIXCwACxdjQV1FJxY3H2F1HHgQ"
    
    
@@ -60,7 +60,7 @@ Click Pay Button & Pay The Amount And Enjoy 🫦</b>"""
 
     PAY_TEXT = """ᴩᴀʏ {price} ᴛᴏ <code>{upi}</code> ᴏʀ ᴀʙᴏᴜᴠᴇ ǫʀ ᴄᴏᴅᴇ.
 
-ᴀɴᴅ ꜱᴇɴᴅ ᴛʜᴇ ᴩᴀʏᴍᴇɴᴛ ꜱᴄʀᴇᴇɴ ꜱʜᴏᴛ ᴡɪᴛʜ ᴛʀᴀɴꜱᴀᴄᴛɪᴏɴ ɪᴅ ᴛᴏ ʜᴇʀᴇ ꜰᴀꜱᴛ.
+ᴀɴᴅ ꜱᴇɴᴅ ᴛʜᴇ ᴩᴀʏᴍᴇɴᴛ ꜱᴄʀᴇᴇɴ ꜱʜᴏᴛ ᴡɪᴛʜ ᴛʀᴀɴꜱᴀᴄᴛɪᴏɴ ɪᴅ here.
 
 /cancel - ᴛᴏ ᴄᴀɴᴄᴇʟ ᴛʜɪꜱ ᴩʀᴏᴄᴇꜱꜱ"""
 
