@@ -27,7 +27,7 @@ class Config:
             'name': '🌺𝙍𝙀𝙎𝙃𝙈𝙄 𝙉𝘼𝙄𝙍🥵',
             'price': '200',
             'pics': ['https://telegra.ph/file/973ea89b4880a082c0a5c.jpg', 'https://telegra.ph/file/ded94bafb8644a7c83974.jpg']
-        }
+        },
         {
             'id': -1001828457115,
             'name': '🦋𝙉𝙄𝙇𝘼 𝙉𝘼𝙉𝘽𝙄𝘼𝙍😍',
