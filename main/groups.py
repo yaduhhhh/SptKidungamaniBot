@@ -8,7 +8,15 @@ GROUPS = [
             'price': 350,
             'paynote': 'Ultra',
             'pics': ['https://graph.org/file/58a143c3adc6aa70b3a1b.jpg', 'https://graph.org/file/2c423c90cf9051fd3d07f.jpg']                                                             
+        [
+            {
+            'id': -1001877948436,
+            'name': '🤩🔞𝐊𝐢𝐝𝐮𝐧𝐠𝐚𝐦𝐚𝐧𝐢 𝐔𝐋𝐓𝐑𝐀🌼',
+            'price': '350',
+            'pics': ['https://graph.org/file/58a143c3adc6aa70b3a1b.jpg', 'https://graph.org/file/2c423c90cf9051fd3d07f.jpg']                                                             
             
+             },
+        ]    
         },
         {
             'id': -1001935409928,
