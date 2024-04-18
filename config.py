@@ -12,7 +12,6 @@ class Config:
     QR_CODE = "https://graph.org/file/a927c5c5c24622eb95462.jpg"
     UPI_ID = "vip8kidungamani@axl"
     TUTORIAL = "BAACAgUAAxkBAAImjGX6ixng9CxtwE3hzgGJ-Mnvt5wMAAIXCwACxdjQV1FJxY3H2F1HHgQ"
-    GROUPS_X = [(-1001935409928), (-1001945623510), (-1002146607794)]
    
 
 class Txt:
