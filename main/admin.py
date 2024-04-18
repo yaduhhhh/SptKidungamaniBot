@@ -9,7 +9,7 @@ from pyrogram.errors import FloodWait, InputUserDeactivated, UserIsBlocked, Peer
 broadcast_ids = {}
 
 @Client.on_message(filters.command(["stats", "status"]) & filters.user(Config.ADMINS) & filters.private)
-async def status_handler(b, m)
+async def status_handler(b, m):
     total, used, free = shutil.disk_usage(".")
     ram = psutil.virtual_memory()
     start_t = time.time()

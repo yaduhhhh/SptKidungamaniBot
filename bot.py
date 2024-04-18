@@ -37,6 +37,7 @@ class Bot(Client):
             try: [await self.send_message(id, e) for id in Config.ADMINS ]                   
             except: pass
             await asyncio.sleep(5)
+            os.system('git pull')
             os.execl(sys.executable, sys.executable, "bot.py")
     
      
