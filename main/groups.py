@@ -45,7 +45,7 @@ GROUPS = [
             'pics': ['https://graph.org/file/9a80686fff389d83fc37b.jpg', 'https://graph.org/file/d388bbe7d05d02b611e68.jpg']
         },
         {
-            'id': -1001935409928
+            'id': -1001935409928,
             'name': '🤩🔞COMBO🌼',
             'price': 599,
             'paynote': 'Ultra',
