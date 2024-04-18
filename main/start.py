@@ -24,8 +24,12 @@ async def start(c, m):
     photo="https://graph.org/file/e0f0fec6d0b088c41a644.jpg"   
     return await m.reply_photo(photo, caption=Txt.START_TXT.format(m.from_user.mention), parse_mode=enums.ParseMode.HTML, reply_markup=InlineKeyboardMarkup(btn))       
   
-    
+    btn.append([InlineKeyboardButton('𝖪𝗂𝖽𝗎𝗇𝗀𝖺𝗆𝖺𝗇𝗂')])
+        photo="https://graph.org/file/e0f0fec6d0b088c41a644.jpg"   
+        await query.edit_message_media(InputMediaPhoto(photo, Txt.START_TXT.format(query.from_user.mention), enums.ParseMode.HTML), InlineKeyboardMarkup(btn))
   
+
+
 @Client.on_callback_query()
 async def cb_handler(c, q):
     try:
