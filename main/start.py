@@ -47,8 +47,7 @@ async def cb_func(client, query):
     for group in Config.GROUPS:
         btn.append([
             InlineKeyboardButton(group['name'], f"grp+{Config.GROUPS.index(group)}")
-        ])
-            
+        ])    
         btn.append([InlineKeyboardButton('How To Buy', 'tutorial')])
         photo="https://graph.org/file/e0f0fec6d0b088c41a644.jpg"   
         await query.edit_message_media(InputMediaPhoto(photo, Txt.START_TXT.format(query.from_user.mention), enums.ParseMode.HTML), InlineKeyboardMarkup(btn))
