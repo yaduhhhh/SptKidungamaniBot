@@ -43,5 +43,13 @@ GROUPS = [
             'price': 200,
             'paynote': 'Ultra',
             'pics': ['https://graph.org/file/9a80686fff389d83fc37b.jpg', 'https://graph.org/file/d388bbe7d05d02b611e68.jpg']
+        },
+        {
+            'id': -1001935409928,
+            'name': '🤩🔞COMBO🌼',
+            'price': 599,
+            'paynote': 'Ultra',
+            'pics': ['https://graph.org/file/58a143c3adc6aa70b3a1b.jpg', 'https://graph.org/file/9a80686fff389d83fc37b.jpg', 'https://graph.org/file/52c458e50c0ae24236bd2.jpg', 'https://graph.org/file/4652ece5d300948417c2f.jpg', 'https://graph.org/file/5b892a958d7b5657bb48c.jpg', 'https://graph.org/file/973ea89b4880a082c0a5c.jpg']                                                             
+            
         }
     ]
