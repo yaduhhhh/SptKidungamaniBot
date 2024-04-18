@@ -5,8 +5,8 @@ GROUPS = [
         {
             'id': -1001935409928,
             'name': '🔞𝐊𝐃𝐌 𝐔𝐋𝐓𝐑𝐀🌼 1.MONTH',
-            'price': 350,
-            'price': 650,
+            'price': ’350’,
+            'price': ’650’,
             'paynote': 'Ultra',
             'pics': ['https://graph.org/file/58a143c3adc6aa70b3a1b.jpg', 'https://graph.org/file/2c423c90cf9051fd3d07f.jpg']                                                             
             
