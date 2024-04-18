@@ -64,7 +64,7 @@ async def cb_func(client, query):
         
            
     elif data.startswith("grp"):
-        group_id = int(data.split('+', 1)[1])
+        group_id = int(data.split('+', 1)[2])
         grp_data = GROUPS[group_id]
         btn = [[
                 InlineKeyboardButton(f"ᴩᴀʏ {grp_data['price']}₹", f"buy+{group_id}"),
