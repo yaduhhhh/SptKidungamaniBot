@@ -13,12 +13,10 @@ async def start(c, m):
     user_id = m.from_user.id
     await db.add_user(user_id)
     btn = []
-    for group in range(0, len(GROUPS), 2):
-        row = []
-        row.append(InlineKeyboardButton(GROUPS[group]['name'], f"grp+{group}"))
-        if group+1 < len(GROUPS):
-            row.append(InlineKeyboardButton(GROUPS[group+1]['name'], f"grp+{group+1}"))
-        btn.append(row)
+    for group in Config.GROUPS:
+        btn.append([
+            InlineKeyboardButton(group['name'], f"grp+{Config.GROUPS.index(group)}")
+        ])
         
     btn.append([InlineKeyboardButton('How To Buy', 'tutorial')])
     photo="https://graph.org/file/e0f0fec6d0b088c41a644.jpg"   
@@ -46,12 +44,10 @@ async def cb_func(client, query):
     user_id = query.from_user.id
     if data == "start":    
         btn = []
-        for group in range(0, len(GROUPS), 2):
-            row = []
-            row.append(InlineKeyboardButton(GROUPS[group]['name'], f"grp+{group}"))
-            if group+1 < len(GROUPS):
-                row.append(InlineKeyboardButton(GROUPS[group+1]['name'], f"grp+{group+1}"))
-            btn.append(row)
+    for group in Config.GROUPS:
+        btn.append([
+            InlineKeyboardButton(group['name'], f"grp+{Config.GROUPS.index(group)}")
+        ])
             
         btn.append([InlineKeyboardButton('How To Buy', 'tutorial')])
         photo="https://graph.org/file/e0f0fec6d0b088c41a644.jpg"   
