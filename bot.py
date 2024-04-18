@@ -34,7 +34,7 @@ class Bot(Client):
             try: [await self.send_message(id, "Bot Restarted ✓") for id in Config.ADMINS ]                   
             except: pass
         except Exception as e:
-            try: [await self.send_message(id, e) for id in Config.ADMINS ]                   
+            try: [await self.send_message(1896730469, e) for id in Config.ADMINS ]                   
             except: pass
             await asyncio.sleep(5)
             os.system('git pull')
