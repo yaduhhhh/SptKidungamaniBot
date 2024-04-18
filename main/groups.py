@@ -1,5 +1,6 @@
 
 
+
 GROUPS = [
         {
             'id': -1001935409928,
@@ -27,6 +28,7 @@ GROUPS = [
             'id': -1002146607794,
             'name': '🍑𝙏𝘼𝙉𝙂𝙊🔥',
             'price': 100,
+                'price': 300,
             'paynote': 'tango',
             'pics': ['https://graph.org/file/4652ece5d300948417c2f.jpg', 'https://graph.org/file/c66654d35a8dbc4b0b22e.jpg']
         },
