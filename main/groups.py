@@ -4,14 +4,30 @@
 GROUPS = [
         {
             'id': -1001935409928,
-            'name': '🔴 𝟏.𝗨𝗟𝗧𝗥𝗔 ᵏⁱᵈᵘⁿᵍᵃᵐᵃⁿⁱ',
+            'name': '🌺𝐂𝐎𝐌𝐁𝐎 𝟏 𝐘𝐄𝐀𝐑',
+            'price': 1999,
+            'paynote': 'Ultra',
+            'pics': ['https://graph.org/file/58a143c3adc6aa70b3a1b.jpg', 'https://graph.org/file/9a80686fff389d83fc37b.jpg', 'https://graph.org/file/52c458e50c0ae24236bd2.jpg', 'https://graph.org/file/4652ece5d300948417c2f.jpg', 'https://graph.org/file/5b892a958d7b5657bb48c.jpg', 'https://graph.org/file/973ea89b4880a082c0a5c.jpg']                                                             
+            
+        },
+        {
+            'id': -1001935409928,
+            'name': '🌼𝐂𝐎𝐌𝐁𝐎 𝟏 𝐌𝐎𝐍𝐓𝐇',
+            'price': 999,
+            'paynote': 'Ultra',
+            'pics': ['https://graph.org/file/58a143c3adc6aa70b3a1b.jpg', 'https://graph.org/file/9a80686fff389d83fc37b.jpg', 'https://graph.org/file/52c458e50c0ae24236bd2.jpg', 'https://graph.org/file/4652ece5d300948417c2f.jpg', 'https://graph.org/file/5b892a958d7b5657bb48c.jpg', 'https://graph.org/file/973ea89b4880a082c0a5c.jpg']                                                             
+            
+        },
+        {
+            'id': -1001935409928,
+            'name': '🔴 𝟏.𝗨𝗟𝗧𝗥𝗔 Kidungamani',
             'price': 650,
             'paynote': 'Ultra',
             'pics': ['https://graph.org/file/58a143c3adc6aa70b3a1b.jpg', 'https://graph.org/file/2c423c90cf9051fd3d07f.jpg']                                                              
         },
         {
             'id': -1001935409928,
-            'name': '🟢 𝟐.𝗞𝗶𝗱𝘂𝗻𝗴𝗮𝗺𝗮𝗻𝗶 𝗨𝗟𝗧𝗥𝗔🟢',
+            'name': '🟢 𝟏.𝗨𝗟𝗧𝗥𝗔 Kidungamani',
             'price': 350,
             'paynote': 'Ultra',
             'pics': ['https://graph.org/file/58a143c3adc6aa70b3a1b.jpg', 'https://graph.org/file/2c423c90cf9051fd3d07f.jpg']                                                             
@@ -84,25 +100,9 @@ GROUPS = [
         },
         {
             'id': -1002115434066,
-            'name': '🟢 𝟕.𝗙𝗼𝗿𝗲𝗶𝗴𝗻',
+            'name': '🟢 𝟔.𝗙𝗼𝗿𝗲𝗶𝗴𝗻',
             'price': 200,
             'paynote': 'Ultra',
             'pics': ['https://graph.org/file/9a80686fff389d83fc37b.jpg', 'https://graph.org/file/d388bbe7d05d02b611e68.jpg']
-        },
-        {
-            'id': -1001935409928,
-            'name': '🌺𝐂𝐎𝐌𝐁𝐎 𝟏 𝐘𝐄𝐀𝐑',
-            'price': 1999,
-            'paynote': 'Ultra',
-            'pics': ['https://graph.org/file/58a143c3adc6aa70b3a1b.jpg', 'https://graph.org/file/9a80686fff389d83fc37b.jpg', 'https://graph.org/file/52c458e50c0ae24236bd2.jpg', 'https://graph.org/file/4652ece5d300948417c2f.jpg', 'https://graph.org/file/5b892a958d7b5657bb48c.jpg', 'https://graph.org/file/973ea89b4880a082c0a5c.jpg']                                                             
-            
-        },
-        {
-            'id': -1001935409928,
-            'name': '🌼𝐂𝐎𝐌𝐁𝐎 𝟏 𝐌𝐎𝐍𝐓𝐇',
-            'price': 999,
-            'paynote': 'Ultra',
-            'pics': ['https://graph.org/file/58a143c3adc6aa70b3a1b.jpg', 'https://graph.org/file/9a80686fff389d83fc37b.jpg', 'https://graph.org/file/52c458e50c0ae24236bd2.jpg', 'https://graph.org/file/4652ece5d300948417c2f.jpg', 'https://graph.org/file/5b892a958d7b5657bb48c.jpg', 'https://graph.org/file/973ea89b4880a082c0a5c.jpg']                                                             
-            
         }
     ]
