@@ -67,7 +67,7 @@ async def cb_func(client, query):
         group_id = int(data.split('+', 1)[1])
         grp_data = GROUPS[group_id]
         btn = [[
-                InlineKeyboardButton("🔞BUY GROUP🔞", f'url+{group_id}')
+                InlineKeyboardButton(f"ᴩᴀʏ {grp_data['price']}₹", f"buy+{group_id}"),
                 ],[
                 InlineKeyboardButton("DEMO ᴩɪᴄꜱ 🫦", f'pics+{group_id}')
                 ],[
@@ -76,7 +76,7 @@ async def cb_func(client, query):
                 InlineKeyboardButton("✘ ᴄʟᴏꜱᴇ", "close"),
                 InlineKeyboardButton("◀️ ʙᴀᴄᴋ", "start")
         ]]
-        txt = Txt.GRP_FREE.format(us=query.from_user.mention, grp=grp_data['name'], price=grp_data['price'], url=grp_data['url'])       
+        txt = Txt.GRP_FREE.format(us=query.from_user.mention, grp=grp_data['name'], price=grp_data['price'])       
         await query.message.edit(text=txt, parse_mode=enums.ParseMode.HTML, reply_markup=InlineKeyboardMarkup(btn))
      
   
