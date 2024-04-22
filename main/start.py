@@ -67,7 +67,7 @@ async def cb_func(client, query):
         group_id = int(data.split('+', 1)[1])
         grp_data = GROUPS[group_id]
         btn = [[
-                InlineKeyboardButton(f"ᴩᴀʏ {grp_data['price']}₹", "https://kidungamani.com/ultra/"),
+                InlineKeyboardButton(f"ᴩᴀʏ {grp_data['price']}₹", f'buy+{link}'),
                 ],[
                 InlineKeyboardButton("DEMO ᴩɪᴄꜱ 🫦", f'pics+{group_id}')
                 ],[
@@ -90,6 +90,7 @@ async def cb_func(client, query):
     elif data.startswith("buy"):
         group_id = int(data.split('+', 1)[1])
         grp_data = GROUPS[group_id]
+        link = "https://kidungamani.com/ultra/"
         
         btn = InlineKeyboardMarkup([[
             InlineKeyboardButton('⭐Contact Admin', user_id=7157859848)
