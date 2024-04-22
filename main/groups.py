@@ -4,9 +4,8 @@
 GROUPS = [
         {
             'id': -1001935409928,
-            'name_x': '𝟏. 𝗨𝗟𝗧𝗥𝗔 Kidungamani',
+            'name': '𝟏. 𝗨𝗟𝗧𝗥𝗔 Kidungamani',
             'price': 650,
-            'url': ['https://kidungamani.com'],
             'paynote': 'Ultra',
             'pics': ['https://graph.org/file/58a143c3adc6aa70b3a1b.jpg', 'https://graph.org/file/2c423c90cf9051fd3d07f.jpg']                                                              
         },
@@ -28,7 +27,6 @@ GROUPS = [
             'id': -1002146607794,
             'name': '𝟒. 𝗧𝗮𝗻𝗴𝗼 𝗩𝗶𝗱𝗲𝗼𝘀',
             'price': 300,
-                'price': 300,
             'paynote': 'tango',
             'pics': ['https://graph.org/file/4652ece5d300948417c2f.jpg', 'https://graph.org/file/c66654d35a8dbc4b0b22e.jpg']
         },
