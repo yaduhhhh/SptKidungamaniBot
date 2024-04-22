@@ -67,7 +67,7 @@ async def cb_func(client, query):
         group_id = int(data.split('+', 1)[1])
         grp_data = GROUPS[group_id]
         btn = [[
-                InlineKeyboardButton(f"ᴩᴀʏ {grp_data['price']}₹", f"buy+{group_id}"),
+                InlineKeyboardButton("🔞BUY GROUP🔞", url='https://kidungamani.com/ultra'),
                 ],[
                 InlineKeyboardButton("DEMO ᴩɪᴄꜱ 🫦", f'pics+{group_id}')
                 ],[
