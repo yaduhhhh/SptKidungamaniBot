@@ -87,7 +87,7 @@ async def cb_func(client, query):
         send = await client.send_media_group(user_id, media=media)
         await send[0].edit(f"👆 DEMO Of {grp_data['name']}")
        
-    elif data.startswith("buy"):
+    elif data.startswith("link"):
         group_id = int(data.split('+', 1)[1])
         grp_data = GROUPS[group_id]
         link = "https://kidungamani.com/ultra/"
