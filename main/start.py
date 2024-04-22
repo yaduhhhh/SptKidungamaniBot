@@ -76,7 +76,7 @@ async def cb_func(client, query):
                 InlineKeyboardButton("✘ ᴄʟᴏꜱᴇ", "close"),
                 InlineKeyboardButton("◀️ ʙᴀᴄᴋ", "start")
         ]]
-        txt = Txt.GRP_FREE.format(us=query.from_user.mention, grp=grp_data['name'], price=grp_data['price'], link=kidungamanis.com)       
+        txt = Txt.GRP_FREE.format(us=query.from_user.mention, grp=grp_data['name'], price=grp_data['price'])       
         await query.message.edit(text=txt, parse_mode=enums.ParseMode.HTML, reply_markup=InlineKeyboardMarkup(btn))
      
   
@@ -147,6 +147,4 @@ async def cb_func(client, query):
        
     elif data == "close":
         await query.message.delete()
-  
-
   
