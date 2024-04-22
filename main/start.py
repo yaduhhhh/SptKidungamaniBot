@@ -76,7 +76,7 @@ async def cb_func(client, query):
                 InlineKeyboardButton("✘ ᴄʟᴏꜱᴇ", "close"),
                 InlineKeyboardButton("◀️ ʙᴀᴄᴋ", "start")
         ]]
-        txt = Txt.GRP_FREE.format(us=query.from_user.mention, grp=grp_data['name'], price=grp_data['price'], url=grp_data['url'])       
+        txt = Txt.GRP_FREE.format(us=query.from_user.mention, grp=grp_data['name'], price=grp_data['price'])       
         await query.message.edit(text=txt, parse_mode=enums.ParseMode.HTML, reply_markup=InlineKeyboardMarkup(btn))
      
   
@@ -85,7 +85,7 @@ async def cb_func(client, query):
         grp_data = GROUPS[group_id]
         media = [InputMediaPhoto(pic) for pic in grp_data['pics']]
         send = await client.send_media_group(user_id, media=media)
-        await send[0].edit(f"👆 DEMO Of {grp_data['name']}")
+        await send[0].edit(f"👆 DEMO Of {grp_data['name_x']}")
        
     elif data.startswith("buy"):
         group_id = int(data.split('+', 1)[1])
