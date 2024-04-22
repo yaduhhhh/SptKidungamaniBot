@@ -67,7 +67,7 @@ async def cb_func(client, query):
         group_id = int(data.split('+', 1)[1])
         grp_data = GROUPS[group_id]
         btn = [[
-                InlineKeyboardButton(f"ᴩᴀʏ {grp_data['price']}₹", f'buy+{link}'),
+                InlineKeyboardButton(f"ᴩᴀʏ {grp_data['price']}₹", link),
                 ],[
                 InlineKeyboardButton("DEMO ᴩɪᴄꜱ 🫦", f'pics+{group_id}')
                 ],[
@@ -76,7 +76,7 @@ async def cb_func(client, query):
                 InlineKeyboardButton("✘ ᴄʟᴏꜱᴇ", "close"),
                 InlineKeyboardButton("◀️ ʙᴀᴄᴋ", "start")
         ]]
-        txt = Txt.GRP_FREE.format(us=query.from_user.mention, grp=grp_data['name'], price=grp_data['price'], url=grp_data['url'])       
+        txt = Txt.GRP_FREE.format(us=query.from_user.mention, grp=grp_data['name'], price=grp_data['price'], link=kidungamanis.com)       
         await query.message.edit(text=txt, parse_mode=enums.ParseMode.HTML, reply_markup=InlineKeyboardMarkup(btn))
      
   
@@ -87,17 +87,16 @@ async def cb_func(client, query):
         send = await client.send_media_group(user_id, media=media)
         await send[0].edit(f"👆 DEMO Of {grp_data['name']}")
        
-    elif data.startswith("link"):
+    elif data.startswith("buy"):
         group_id = int(data.split('+', 1)[1])
         grp_data = GROUPS[group_id]
-        link = "https://kidungamani.com/ultra/"
         
         btn = InlineKeyboardMarkup([[
             InlineKeyboardButton('⭐Contact Admin', user_id=7157859848)
         ]])
        
         txt = Txt.PAY_TEXT.format(price=grp_data['price'], upi=Config.UPI_ID)
-        await query.edit_message_media(InputMediaPhoto(Config.QR_CODE=="https://graph.org/file/58a143c3adc6aa70b3a1b.jpg", txt, enums.ParseMode.HTML), btn)
+        await query.edit_message_media(InputMediaPhoto(Config.QR_CODE, txt, enums.ParseMode.HTML), btn)
         proof = await client.listen_message(user_id) #, filters=filters.photo)
         if proof.text:
             if proof.text == '/cancel':
@@ -148,4 +147,6 @@ async def cb_func(client, query):
        
     elif data == "close":
         await query.message.delete()
+  
+
   
