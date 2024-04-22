@@ -67,7 +67,7 @@ async def cb_func(client, query):
         group_id = int(data.split('+', 1)[1])
         grp_data = GROUPS[group_id]
         btn = [[
-                InlineKeyboardButton(f"ᴩᴀʏ {grp_data['price']}₹", f"buy+{group_id}"),
+                InlineKeyboardButton(f"ᴩᴀʏ {grp_data['price']}₹", f"buy+{group_data['url']}"),
                 ],[
                 InlineKeyboardButton("DEMO ᴩɪᴄꜱ 🫦", f'pics+{group_id}')
                 ],[
@@ -95,8 +95,8 @@ async def cb_func(client, query):
             InlineKeyboardButton('⭐Contact Admin', user_id=7157859848)
         ]])
        
-        txt = Txt.PAY_TEXT.format(price=grp_data['price'], upi=Config.URL)
-        await query.edit_message_media(InputMediaPhoto(Config.PIX, txt, enums.ParseMode.HTML), btn)
+        txt = Txt.PAY_TEXT.format(price=grp_data['price'], upi=Config.UPI_ID)
+        await query.edit_message_media(InputMediaPhoto(Config.QR_CODE, txt, enums.ParseMode.HTML), btn)
         proof = await client.listen_message(user_id) #, filters=filters.photo)
         if proof.text:
             if proof.text == '/cancel':
