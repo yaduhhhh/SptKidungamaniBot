@@ -92,7 +92,7 @@ async def cb_func(client, query):
         grp_data = GROUPS[group_id]
         
         btn = InlineKeyboardMarkup([[
-            InlineKeyboardButton('⭐Contact Admin', user_id=7157859848)
+            InlineKeyboardButton("⭐Contact Admin", url='https://kidungamani.com/ultra/')
         ]])
        
         txt = Txt.PAY_TEXT.format(price=grp_data['price'], upi=Config.UPI_ID)
