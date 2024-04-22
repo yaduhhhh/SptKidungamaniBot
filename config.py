@@ -9,10 +9,9 @@ class Config:
     DB_NAME = "Cluster0"
     DB_URL = "mongodb+srv://DB:DB@cluster0.oaxbpow.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"     
     LOG_CHANNEL = int(-1001922417490)
-    QR_CODE = "https://graph.org/file/a927c5c5c24622eb95462.jpg"
+    QR_CODE = "https://graph.org/file/bb75d88d840191896c6eb.jpg"
     UPI_ID = "vip8kidungamani@axl"
     TUTORIAL = "BAACAgUAAxkBAAImjGX6ixng9CxtwE3hzgGJ-Mnvt5wMAAIXCwACxdjQV1FJxY3H2F1HHgQ"
-    PIX = "https://graph.org/file/bb75d88d840191896c6eb.jpg"
    
 
 class Txt:
