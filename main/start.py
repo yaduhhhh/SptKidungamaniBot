@@ -92,10 +92,10 @@ async def cb_func(client, query):
         grp_data = GROUPS[group_id]
         
         btn = InlineKeyboardMarkup([[
-            InlineKeyboardButton("⭐Contact Admin", user_id=7157859848)
+            InlineKeyboardButton('⭐Contact Admin', user_id=7157859848)
         ]])
        
-        txt = Txt.PAY_TEXT.format(price=grp_data['price'], url=Config.URL)
+        txt = Txt.PAY_TEXT.format(price=grp_data['price'], upi=Config.UPI_ID)
         await query.edit_message_media(InputMediaPhoto(Config.QR_CODE, txt, enums.ParseMode.HTML), btn)
         proof = await client.listen_message(user_id) #, filters=filters.photo)
         if proof.text:
