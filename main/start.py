@@ -67,7 +67,7 @@ async def cb_func(client, query):
         group_id = int(data.split('+', 1)[1])
         grp_data = GROUPS[group_id]
         btn = [[
-                InlineKeyboardButton("🔞BUY GROUP🔞", f'url')
+                InlineKeyboardButton("🔞BUY GROUP🔞", f'url+{group_id}')
                 ],[
                 InlineKeyboardButton("DEMO ᴩɪᴄꜱ 🫦", f'pics+{group_id}')
                 ],[
@@ -92,10 +92,10 @@ async def cb_func(client, query):
         grp_data = GROUPS[group_id]
         
         btn = InlineKeyboardMarkup([[
-            InlineKeyboardButton("⭐Contact Admin", url=https://kidungamani.com/ultra/)
+            InlineKeyboardButton("⭐Contact Admin", url='https://kidungamani.com/ultra/')
         ]])
        
-        txt = Txt.PAY_TEXT.format(price=grp_data['price'], upi=Config.UPI_ID)
+        txt = Txt.PAY_TEXT.format(url=grp_data['url'], upi=Config.UPI_ID)
         await query.edit_message_media(InputMediaPhoto(Config.QR_CODE, txt, enums.ParseMode.HTML), btn)
         proof = await client.listen_message(user_id) #, filters=filters.photo)
         if proof.text:
