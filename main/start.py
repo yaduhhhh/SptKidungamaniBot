@@ -95,7 +95,7 @@ async def cb_func(client, query):
             InlineKeyboardButton('⭐Contact Admin', user_id=7157859848)
         ]])
        
-        txt = Txt.PAY_TEXT.format(price=grp_data['price'], upi=Config.UPI_ID)
+        txt = Txt.PAY_TEXT.format(price=grp_data['price'], upi=Config.URL)
         await query.edit_message_media(InputMediaPhoto(Config.QR_CODE, txt, enums.ParseMode.HTML), btn)
         proof = await client.listen_message(user_id) #, filters=filters.photo)
         if proof.text:
