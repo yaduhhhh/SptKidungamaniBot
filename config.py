@@ -42,7 +42,13 @@ Price: {price}
 
 Click Pay Button, Pay The Amount And JOIN 🫦</b>"""
 
-    PAY_TEXT = """LINK : kidungamanis.com"""
+    PAY_TEXT = """LINK : kidungamanis.com
+    
+    LINK : kidungamanis.com
+    
+    LINK : kidungamanis.com
+    
+    LINK : kidungamanis.com"""
 
 
     PAY_VERFY_TXT = """a user {}
