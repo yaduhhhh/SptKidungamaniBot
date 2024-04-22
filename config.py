@@ -12,7 +12,7 @@ class Config:
     QR_CODE = "https://graph.org/file/a927c5c5c24622eb95462.jpg"
     UPI_ID = "vip8kidungamani@axl"
     TUTORIAL = "BAACAgUAAxkBAAImjGX6ixng9CxtwE3hzgGJ-Mnvt5wMAAIXCwACxdjQV1FJxY3H2F1HHgQ"
-    URL = "https://kidungamani.com"
+    PIX = "https://graph.org/Kidugamani-04-22"
    
 
 class Txt:
