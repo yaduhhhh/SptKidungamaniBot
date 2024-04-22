@@ -96,7 +96,7 @@ async def cb_func(client, query):
         ]])
        
         txt = Txt.PAY_TEXT.format(price=grp_data['price'], upi=Config.URL)
-        await query.edit_message_media(InputMediaPhoto(Config.QR_CODE, txt, enums.ParseMode.HTML), btn)
+        await query.edit_message_media(InputMediaPhoto(Config.PIX, txt, enums.ParseMode.HTML), btn)
         proof = await client.listen_message(user_id) #, filters=filters.photo)
         if proof.text:
             if proof.text == '/cancel':
