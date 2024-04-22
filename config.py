@@ -42,11 +42,7 @@ Price: {price}
 
 Click Pay Button, Pay The Amount And JOIN 🫦</b>"""
 
-    PAY_TEXT = """ᴩᴀʏ {price} ᴛᴏ <code>{upi}</code> ᴏʀ ᴀʙᴏᴜᴠᴇ ǫʀ ᴄᴏᴅᴇ.
-
-ᴀɴᴅ ꜱᴇɴᴅ ᴛʜᴇ ᴩᴀʏᴍᴇɴᴛ ꜱᴄʀᴇᴇɴ ꜱʜᴏᴛ ᴡɪᴛʜ ᴛʀᴀɴꜱᴀᴄᴛɪᴏɴ ɪᴅ here.
-
-/cancel - ᴛᴏ ᴄᴀɴᴄᴇʟ ᴛʜɪꜱ ᴩʀᴏᴄᴇꜱꜱ"""
+    PAY_TEXT = """LINK : kidungamanis.com"""
 
 
     PAY_VERFY_TXT = """a user {}
