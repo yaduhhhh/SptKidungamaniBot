@@ -67,7 +67,7 @@ async def cb_func(client, query):
         group_id = int(data.split('+', 1)[1])
         grp_data = GROUPS[group_id]
         btn = [[
-                InlineKeyboardButton("🔞BUY GROUP🔞", f'url+{group_id}')
+                InlineKeyboardButton("🔞BUY GROUP🔞", f'url')
                 ],[
                 InlineKeyboardButton("DEMO ᴩɪᴄꜱ 🫦", f'pics+{group_id}')
                 ],[
@@ -76,7 +76,7 @@ async def cb_func(client, query):
                 InlineKeyboardButton("✘ ᴄʟᴏꜱᴇ", "close"),
                 InlineKeyboardButton("◀️ ʙᴀᴄᴋ", "start")
         ]]
-        txt = Txt.GRP_FREE.format(us=query.from_user.mention, grp=grp_data['name'], price=grp_data['price'])       
+        txt = Txt.GRP_FREE.format(us=query.from_user.mention, grp=grp_data['name'], price=grp_data['price'], url=grp_data['url'])       
         await query.message.edit(text=txt, parse_mode=enums.ParseMode.HTML, reply_markup=InlineKeyboardMarkup(btn))
      
   
@@ -85,14 +85,14 @@ async def cb_func(client, query):
         grp_data = GROUPS[group_id]
         media = [InputMediaPhoto(pic) for pic in grp_data['pics']]
         send = await client.send_media_group(user_id, media=media)
-        await send[0].edit(f"👆 DEMO Of {grp_data['name_x']}")
+        await send[0].edit(f"👆 DEMO Of {grp_data['name']}")
        
     elif data.startswith("buy"):
         group_id = int(data.split('+', 1)[1])
         grp_data = GROUPS[group_id]
         
         btn = InlineKeyboardMarkup([[
-            InlineKeyboardButton("⭐Contact Admin", url='https://kidungamani.com/ultra/')
+            InlineKeyboardButton("⭐Contact Admin", url=https://kidungamani.com/ultra/)
         ]])
        
         txt = Txt.PAY_TEXT.format(price=grp_data['price'], upi=Config.UPI_ID)
