@@ -4,9 +4,9 @@
 GROUPS = [
         {
             'id': -1001935409928,
-            'name': '𝟏. 𝗨𝗟𝗧𝗥𝗔 Kidungamani',
+            'name_x': '𝟏. 𝗨𝗟𝗧𝗥𝗔 Kidungamani',
             'price': 650,
-            'url': ['https://kidungamani.com/ultra/'],
+            'url': ['https://kidungamani.com'],
             'paynote': 'Ultra',
             'pics': ['https://graph.org/file/58a143c3adc6aa70b3a1b.jpg', 'https://graph.org/file/2c423c90cf9051fd3d07f.jpg']                                                              
         },
