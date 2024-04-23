@@ -39,7 +39,6 @@ class Txt:
 🔞Many more features 👍🏻
 
 Price: {price}
-Direct Pay: <b><a href={link}>CLICK HERE</a></b>
 
 Click Pay Button, Pay The Amount And JOIN 🫦</b>"""
 
@@ -49,7 +48,10 @@ Click Pay Button, Pay The Amount And JOIN 🫦</b>"""
     
     LINK : kidungamanis.com
     
-    LINK : kidungamanis.com"""
+    LINK : kidungamanis.com
+    
+
+Direct Pay: <b><a href={link}>CLICK HERE</a></b>"""
 
 
     PAY_VERFY_TXT = """a user {}
