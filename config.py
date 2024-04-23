@@ -39,6 +39,7 @@ class Txt:
 🔞Many more features 👍🏻
 
 Price: {price}
+Direct Pay: <b><a href={link}>CLICK HERE</a></b>
 
 Click Pay Button, Pay The Amount And JOIN 🫦</b>"""
 
