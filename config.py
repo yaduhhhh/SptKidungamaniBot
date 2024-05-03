@@ -9,7 +9,7 @@ class Config:
     DB_NAME = "Cluster0"
     DB_URL = "mongodb+srv://DB:DB@cluster0.oaxbpow.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"     
     LOG_CHANNEL = int(-1001922417490)
-    QR_CODE = "https://graph.org/file/bb75d88d840191896c6eb.jpg"
+    QR_CODE = "https://graph.org/file/aed44229d6d1160125d58.jpg"
     UPI_ID = "vip8kidungamani@axl"
     TUTORIAL = "BAACAgUAAxkBAAImjGX6ixng9CxtwE3hzgGJ-Mnvt5wMAAIXCwACxdjQV1FJxY3H2F1HHgQ"
    
@@ -42,13 +42,11 @@ Price: {price}
 
 Click Pay Button, Pay The Amount And JOIN 🫦</b>"""
 
-    PAY_TEXT = """LINK : kidungamanis.com
-    
-    LINK : kidungamanis.com
-    
-    LINK : kidungamanis.com
-    
-    LINK : kidungamanis.com
+    PAY_TEXT = """Pay And Send screenshot
+
+    പേയ്‌മെന്റ് ചെയ്യുക എന്നിട്ട് screenshot ഇതിലേക്ക് അയക്കുക 
+
+ചെയ്യാൻ അറിയില്ലെങ്കിൽ @Johny_Sin ഇതിൽ മെസ്സേജ് അയക്കുക 🤲
     
 
 Direct Pay: <b><a href={link}>CLICK HERE</a></b>"""
