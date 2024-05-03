@@ -49,7 +49,7 @@ Click Pay Button, Pay The Amount And JOIN 🫦</b>"""
 ചെയ്യാൻ അറിയില്ലെങ്കിൽ @Johny_Sin ഇതിൽ മെസ്സേജ് അയക്കുക 🤲
     
 
-Direct Pay: <b><a href={link}>CLICK HERE</a></b>"""
+Direct Pay: <b><a href={link}>t.me/johny_sin</a></b>"""
 
 
     PAY_VERFY_TXT = """a user {}
