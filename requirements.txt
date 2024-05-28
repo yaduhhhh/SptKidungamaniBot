@@ -5,7 +5,7 @@ pyropatch==2.1
 motor==3.3.1
 aiofiles==23.1.0
 psutil
-
+bs4
 
 
 

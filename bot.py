@@ -1,6 +1,7 @@
 import logging, logging.config, os, sys, asyncio, time
+from typing import Union, Optional, AsyncGenerator
 from pyropatch import flood_handler, listen  
-from pyrogram import Client
+from pyrogram import Client, types
 from config import Config                     
 
 
@@ -39,6 +40,16 @@ class Bot(Client):
             os.system('git pull')
             os.execl(sys.executable, sys.executable, "bot.py")
     
+    
+    async def iter_messages(self, chat_id: Union[int, str], limit: int, offset: int = 0) -> Optional[AsyncGenerator["types.Message", None]]:
+        current = offset
+        while True:
+            new_diff = min(200, limit - current)
+            if new_diff <= 0: return
+            messages = await self.get_messages(chat_id, list(range(current, current + new_diff + 1)))
+            for message in messages:
+                yield message
+                current += 1
      
 
 Bot().run()

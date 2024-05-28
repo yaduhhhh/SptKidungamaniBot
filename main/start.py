@@ -5,26 +5,49 @@ from pyrogram.errors import FloodWait, MessageNotModified
 
 from config import Config, Txt
 from helper.database import db
-from helper.utils import humanbytes
+from helper.utils import humanbytes, unpack_new_file_id
 from .groups import GROUPS
 
 @Client.on_message(filters.private & filters.command("start"))
 async def start(c, m): 
     user_id = m.from_user.id
     await db.add_user(user_id)
-    btn = []
-    for group in range(0, len(GROUPS), 2):
-        row = []
-        row.append(InlineKeyboardButton(GROUPS[group]['name'], f"grp+{group}"))
-        if group+1 < len(GROUPS):
-            row.append(InlineKeyboardButton(GROUPS[group+1]['name'], f"grp+{group+1}"))
-        btn.append(row)
-        
-    btn.append([InlineKeyboardButton('How To Buy', 'tutorial')])
-    photo="https://graph.org/file/e0f0fec6d0b088c41a644.jpg"   
-    return await m.reply_photo(photo, caption=Txt.START_TXT.format(m.from_user.mention), parse_mode=enums.ParseMode.HTML, reply_markup=InlineKeyboardMarkup(btn))       
-  
-
+    
+    if len(m.command) != 2:
+        btn = []
+        for group in range(0, len(GROUPS), 2):
+            row = []
+            row.append(InlineKeyboardButton(GROUPS[group]['name'], f"grp+{group}"))
+            if group+1 < len(GROUPS):
+                row.append(InlineKeyboardButton(GROUPS[group+1]['name'], f"grp+{group+1}"))
+            btn.append(row)
+            
+        btn.append([InlineKeyboardButton('How To Buy', 'tutorial')])
+        photo="https://graph.org/file/e0f0fec6d0b088c41a644.jpg"   
+        return await m.reply_photo(photo, caption=Txt.START_TXT.format(m.from_user.mention), parse_mode=enums.ParseMode.HTML, reply_markup=InlineKeyboardMarkup(btn))       
+      
+    data = m.command[1]
+    if data.split("-", 1)[0] == "DSTORE":
+        sts = await m.reply("ᴩʟᴇᴀꜱᴇ ᴡᴀɪᴛ......")
+        b_string = data.split("-", 1)[1]
+        decoded = (base64.urlsafe_b64decode(b_string + "=" * (-len(b_string) % 4))).decode("ascii")
+        try: f_msg_id, l_msg_id, f_chat_id, protect = decoded.split("_", 3)
+        except: f_msg_id, l_msg_id, f_chat_id = decoded.split("_", 2)
+        async for msg in c.iter_messages(int(f_chat_id), int(l_msg_id), int(f_msg_id)):
+            if msg.empty: continue
+            try:
+                await msg.copy(m.chat.id)
+            except FloodWait as e:
+                await asyncio.sleep(e.value)
+                await msg.copy(m.chat.id)
+            except Exception as e:
+                print(e)
+                continue
+            await asyncio.sleep(0.5) 
+        await sts.delete()
+        return await m.reply_text("**ᴄᴏᴍᴩʟᴇᴛᴇᴅ ✨️**")
+            
+    
 
 @Client.on_callback_query()
 async def cb_handler(c, q):
