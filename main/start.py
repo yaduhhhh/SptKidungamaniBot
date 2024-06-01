@@ -50,8 +50,9 @@ async def start(c, m):
             await sts.delete()
             return await m.reply_text("**ᴄᴏᴍᴩʟᴇᴛᴇᴅ ✨️**")
         except Exception as e:     
-            await c.send_message(5652656279, e)
-    
+            try: [await c.send_message(id, e) for id in Config.ADMINS ]
+            except: pass
+        
 
 @Client.on_callback_query()
 async def cb_handler(c, q):
