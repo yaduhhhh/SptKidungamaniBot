@@ -8,6 +8,8 @@ from helper.database import db
 from helper.utils import humanbytes, unpack_new_file_id
 from .groups import GROUPS
 
+import random, asyncio, re, os, sys, json, base64
+
 @Client.on_message(filters.private & filters.command("start"))
 async def start(c, m): 
     user_id = m.from_user.id
