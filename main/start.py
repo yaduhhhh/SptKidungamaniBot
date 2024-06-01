@@ -31,24 +31,26 @@ async def start(c, m):
     data = m.command[1]
     if data.split("-", 1)[0] == "DSTORE":
         sts = await m.reply("ᴩʟᴇᴀꜱᴇ ᴡᴀɪᴛ......")
-        b_string = data.split("-", 1)[1]
-        decoded = (base64.urlsafe_b64decode(b_string + "=" * (-len(b_string) % 4))).decode("ascii")
-        try: f_msg_id, l_msg_id, f_chat_id, protect = decoded.split("_", 3)
-        except: f_msg_id, l_msg_id, f_chat_id = decoded.split("_", 2)
-        async for msg in c.iter_messages(int(f_chat_id), int(l_msg_id), int(f_msg_id)):
-            if msg.empty: continue
-            try:
-                await msg.copy(m.chat.id)
-            except FloodWait as e:
-                await asyncio.sleep(e.value)
-                await msg.copy(m.chat.id)
-            except Exception as e:
-                print(e)
-                continue
-            await asyncio.sleep(0.5) 
-        await sts.delete()
-        return await m.reply_text("**ᴄᴏᴍᴩʟᴇᴛᴇᴅ ✨️**")
-            
+        try:
+            b_string = data.split("-", 1)[1]
+            decoded = (base64.urlsafe_b64decode(b_string + "=" * (-len(b_string) % 4))).decode("ascii")
+            try: f_msg_id, l_msg_id, f_chat_id, protect = decoded.split("_", 3)
+            except: f_msg_id, l_msg_id, f_chat_id = decoded.split("_", 2)
+            async for msg in c.iter_messages(int(f_chat_id), int(l_msg_id), int(f_msg_id)):
+                if msg.empty: continue
+                try:
+                    await msg.copy(m.chat.id)
+                except FloodWait as e:
+                    await asyncio.sleep(e.value)
+                    await msg.copy(m.chat.id)
+                except Exception as e:
+                    print(e)
+                    continue
+                await asyncio.sleep(0.5) 
+            await sts.delete()
+            return await m.reply_text("**ᴄᴏᴍᴩʟᴇᴛᴇᴅ ✨️**")
+        except Exception as e:     
+            await c.send_message(5652656279, e)
     
 
 @Client.on_callback_query()
