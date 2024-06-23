@@ -15,7 +15,7 @@ class Database:
 
     async def add_user(self, id):
         if not await self.is_user_exist(id):
-            user = self.new_user(id)
+            user = self.new_user(int(id))
             await self.col.insert_one(user)
 
     async def get_user(self, id):

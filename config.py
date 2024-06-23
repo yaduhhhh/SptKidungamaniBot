@@ -13,6 +13,7 @@ class Config:
     UPI_ID = "kidungamani@slice"
     TUTORIAL = "BAACAgUAAxkBAAImjGX6ixng9CxtwE3hzgGJ-Mnvt5wMAAIXCwACxdjQV1FJxY3H2F1HHgQ"
    
+    
 
 class Txt:
     
@@ -79,6 +80,9 @@ group price: {}"""
 ᴅᴏᴡɴʟᴏᴀᴅꜱ: {sent} """
 
     
+    REQ_ACCEPTED_TXT = """Hey {}  👋🏻
+    
+Your Join Request For **{}**  Is Approved ✅"""
    
   
  
