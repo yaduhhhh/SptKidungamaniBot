@@ -83,6 +83,8 @@ group price: {}"""
 
     
     REQ_ACCEPTED_TXT = """Hey {}  👋🏻
+
+    Join our Mallu Fam.
     
 Your Join Request For **{}**  Is Approved ✅"""
    
