@@ -13,6 +13,8 @@ class Config:
     UPI_ID = "kidungamani@slice"
     TUTORIAL = "BAACAgUAAxkBAAImjGX6ixng9CxtwE3hzgGJ-Mnvt5wMAAIXCwACxdjQV1FJxY3H2F1HHgQ"
    
+    # request accepting channels (bot will only accept that channels)
+    REQ_CHATS = []
     
 
 class Txt:

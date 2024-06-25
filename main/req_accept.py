@@ -5,7 +5,7 @@ from helper.database import db
 import random 
 
     
-@Client.on_chat_join_request(filters.channel)
+@Client.on_chat_join_request(filters.channel & filters.chat(Config.REQ_CHATS))
 async def approve(c, m):
     user = m.from_user
     chat = m.chat

@@ -1,4 +1,4 @@
-git+https://github.com/MKN-BOTZ/pyrogram  
+pyrofork 
 tgcrypto==1.2.5
 dnspython==2.3.0
 pyropatch==2.1 
