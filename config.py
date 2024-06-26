@@ -14,7 +14,7 @@ class Config:
     TUTORIAL = "BAACAgUAAxkBAAImjGX6ixng9CxtwE3hzgGJ-Mnvt5wMAAIXCwACxdjQV1FJxY3H2F1HHgQ"
    
     # request accepting channels (bot will only accept that channels)
-    REQ_CHATS = []  # value add like   [-100828282828, -100882828282, -1002150922686]
+    REQ_CHATS = []  # value add like   [-100828282828, -100882828282, -1002150922686, -1001802204511]
     
 
 class Txt:
