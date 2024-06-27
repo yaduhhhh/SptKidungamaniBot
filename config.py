@@ -85,6 +85,10 @@ group price: {}"""
     REQ_ACCEPTED_TXT = """Hey {}  👋🏻
 
     Join our Mallu Fam.
+
+    LINK : https://t.me/addlist/DguRVLjrV9k4MmI1
+
+    ippol thanne ee groups il join cheyyu, UNLIMITED VIDEOS WAITING!!!!!!
     
 Your Join Request For **{}**  Is Approved ✅"""
    
