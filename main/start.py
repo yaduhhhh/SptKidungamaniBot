@@ -52,9 +52,15 @@ async def start(c, m):
         except Exception as e:     
             try: [await c.send_message(id, e) for id in Config.ADMINS ]
             except: pass
-        
 
-@Client.on_callback_query()
+@Client.on_message(filters.command('help'))
+async def help(c, m):
+    await m.reply(Txt.HELP_TXT, quote=True)
+    
+            
+       
+
+@Cl ient.on_callback_quer    y()
 async def cb_handler(c, q):
     try:
         await cb_func(c, q)
