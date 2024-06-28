@@ -60,7 +60,7 @@ async def help(c, m):
             
        
 
-@Cl ient.on_callback_quer    y()
+@Client.on_callback_query()
 async def cb_handler(c, q):
     try:
         await cb_func(c, q)
