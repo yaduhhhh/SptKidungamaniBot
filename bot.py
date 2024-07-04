@@ -35,10 +35,11 @@ class Bot(Client):
             try: [await self.send_message(id, "Bot Restarted ✓") for id in Config.ADMINS ]                   
             except: pass
         except Exception as e:
-            await self.send_message(1896730469, e)
-            await asyncio.sleep(5)
-            os.system('git pull')
-            os.execl(sys.executable, sys.executable, "bot.py")
+            if self.is_connected:
+                await self.send_message(1896730469, e)
+                await asyncio.sleep(5)
+                os.system('git pull')
+                os.execl(sys.executable, sys.executable, "bot.py")
     
     
     async def iter_messages(self, chat_id: Union[int, str], limit: int, offset: int = 0) -> Optional[AsyncGenerator["types.Message", None]]:
