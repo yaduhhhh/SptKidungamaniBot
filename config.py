@@ -1,7 +1,7 @@
 
 
 class Config:
-    BOT_TOKEN = "6912059186:AAGLsNfUadNZT6GENgZxWb2Fs_rak0Ki5Wc"
+    BOT_TOKEN = "6304569739:AAHD7Zdzw61xpkQmCpUbR1j1S1yTm2WaDn8"
     API_ID = int(25694565)
     API_HASH = "01695c8ff7f8f2d8a3407bf7655f512a"
  
