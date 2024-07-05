@@ -34,9 +34,9 @@ t.me/+m0YPqpIx-jdmNGMx
 
 PAY NOW 
 
-- kidungamani.com/qr (http://kidungamani.com/qr)
-- kidungamani.com/qr (http://kidungamani.com/qr)
-- kidungamani.com/qr (http://kidungamani.com/qr)"""
+- kidungamani.com/qr 
+- kidungamani.com/qr 
+- kidungamani.com/qr"""
     
     HOPE_TXT = """Hello XXXXXXXX"""
    
