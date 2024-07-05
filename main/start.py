@@ -56,6 +56,10 @@ async def start(c, m):
 @Client.on_message(filters.command('help'))
 async def help(c, m):
     await m.reply(Txt.HELP_TXT, quote=True)
+
+@Client.on_message(filters.command('hope'))
+async def hope(c, m):
+    await m.reply(Txt.HOPE_TXT, quote=True)
     
             
        
