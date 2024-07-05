@@ -22,7 +22,21 @@ class Txt:
     START_TXT = """𝐇𝐄𝐋𝐋𝐎😍👋,\n𝗦𝗲𝗹𝗲𝗰𝘁 𝗧𝗵𝗲 𝗚𝗥𝗢𝗨𝗣 𝗬𝗢𝗨 𝗪𝗔𝗡𝗧🌺‼️\n\nനിങ്ങൾക് ഇഷ്ടമുള്ള ഗ്രുപ്പ് select ചെയ്യുക.!!!"""   
    
    
-    HELP_TXT = """Hello"""
+    HELP_TXT = """Kidungamani ULTRA 24x7
+    Demo
+
+t.me/+m0YPqpIx-jdmNGMx
+
+
+15 days : RS 400/-
+1 month : RS 700/-
+
+
+PAY NOW 
+
+- kidungamani.com/qr (http://kidungamani.com/qr)
+- kidungamani.com/qr (http://kidungamani.com/qr)
+- kidungamani.com/qr (http://kidungamani.com/qr)"""
     
     HOPE_TXT = """Hello XXXXXXXX"""
    
