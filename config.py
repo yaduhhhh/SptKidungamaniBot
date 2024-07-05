@@ -23,6 +23,8 @@ class Txt:
    
    
     HELP_TXT = """Hello"""
+    
+    HOPE_TXT = """Hello XXXXXXXX"""
    
     GRP_PRM = """<b>Hey {us} ✨️</b>
 
