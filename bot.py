@@ -31,7 +31,7 @@ class Bot(Client):
             self.username = me.username  
             self.uptime = time.time()
             self.log = Config.LOG_CHANNEL
-            print(f"{me.first_name} 𝚂𝚃𝙰𝚁𝚃𝙴𝙳 ⚡️⚡️⚡️")
+            print(f"@{me.username} 𝚂𝚃𝙰𝚁𝚃𝙴𝙳 ⚡️⚡️⚡️")
             try: [await self.send_message(id, "Bot Restarted ✓") for id in Config.ADMINS ]                   
             except: pass
         except Exception as e:
