@@ -11,7 +11,7 @@ class Config:
     LOG_CHANNEL = int(-1001922417490)
     QR_CODE = "https://graph.org/file/aed44229d6d1160125d58.jpg"
     UPI_ID = "kidungamani@slice"
-    TUTORIAL = "BAACAgUAAxkBAAImjGX6ixng9CxtwE3hzgGJ-Mnvt5wMAAIXCwACxdjQV1FJxY3H2F1HHgQ"
+    TUTORIAL = "BAACAgQAAxkBAAEBIWVmkv9OzA8-EKgAAQoZIfzHSeF1M4EAAuYRAAJZVJlQhJ8JJI2jc98eBA"
    
     # request accepting channels (bot will only accept that channels)
     REQ_CHATS = [-1001802204511, -1002245475515, -1002172269508, -1002236661678]  # value add like   [-100828282828, -1001802204511]
