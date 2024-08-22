@@ -1,14 +1,14 @@
 
 
 class Config:
-    BOT_TOKEN = "6909575813:AAEur6wHHVmSXOr18FOSasgYKGbrwlEF_C8"
-    API_ID = int(25694565)
-    API_HASH = "01695c8ff7f8f2d8a3407bf7655f512a"
+    BOT_TOKEN = "7220573916:AAH1Jdlzs1t9rZ9NINvgLrV1lchOJuz6hs8"
+    API_ID = int(23659063)
+    API_HASH = "f3b6b069c202bcf984ca8b0df252a57e"
  
     ADMINS = [7049601400, 1896730469, 7157859848, 6164338004, 6986346668, 7143731074]
-    DB_NAME = "Cluster1"
-    DB_URL = "mongodb+srv://DB:DB@cluster0.oaxbpow.mongodb.net/?retryWrites=true&w=majority"     
-    LOG_CHANNEL = int(-1001922417490)
+    DB_NAME = "XL1"
+    DB_URL = "mongodb+srv://XL1:XL1@xl1.kje85.mongodb.net/?retryWrites=true&w=majority&appName=XL1"     
+    LOG_CHANNEL = int(-1002229659565)
     QR_CODE = "https://graph.org/file/aed44229d6d1160125d58.jpg"
     UPI_ID = "kidungamani@slice"
     TUTORIAL = "BAACAgQAAxkBAAEBIWVmkv9OzA8-EKgAAQoZIfzHSeF1M4EAAuYRAAJZVJlQhJ8JJI2jc98eBA"
