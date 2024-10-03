@@ -5,7 +5,7 @@ class Config:
     API_ID = int(23250949)
     API_HASH = "25ad48c711d987870524b0bb9d8915be"
  
-    ADMINS = [23250949]
+    ADMINS = [6771166154]
     DB_NAME = "XL1"
     DB_URL = "mongodb+srv://test:test@test.chplp.mongodb.net/?retryWrites=true&w=majority&appName=test"     
     LOG_CHANNEL = int(-1004569936436)
