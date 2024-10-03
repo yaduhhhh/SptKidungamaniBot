@@ -1,20 +1,20 @@
 
 
 class Config:
-    BOT_TOKEN = "7220573916:AAH1Jdlzs1t9rZ9NINvgLrV1lchOJuz6hs8"
-    API_ID = int(23659063)
-    API_HASH = "f3b6b069c202bcf984ca8b0df252a57e"
+    BOT_TOKEN = "8121030734:AAHTeSbGZ3Vnnzk3UfSeuKKsbJM_xz1fgtM"
+    API_ID = int(23250949)
+    API_HASH = "25ad48c711d987870524b0bb9d8915be"
  
-    ADMINS = [7049601400, 1896730469, 7157859848, 6164338004, 6986346668, 7143731074]
+    ADMINS = [23250949]
     DB_NAME = "XL1"
-    DB_URL = "mongodb+srv://XL1:XL1@xl1.kje85.mongodb.net/?retryWrites=true&w=majority&appName=XL1"     
-    LOG_CHANNEL = int(-1002229659565)
+    DB_URL = "mongodb+srv://test:test@test.chplp.mongodb.net/?retryWrites=true&w=majority&appName=test"     
+    LOG_CHANNEL = int(-1004569936436)
     QR_CODE = "https://graph.org/file/aed44229d6d1160125d58.jpg"
     UPI_ID = "kidungamani@slice"
     TUTORIAL = "BAACAgQAAxkBAAEBIWVmkv9OzA8-EKgAAQoZIfzHSeF1M4EAAuYRAAJZVJlQhJ8JJI2jc98eBA"
    
     # request accepting channels (bot will only accept that channels)
-    REQ_CHATS = [-1001802204511, -1002245475515, -1002172269508, -1002236661678]  # value add like   [-100828282828, -1001802204511]
+    REQ_CHATS = []  # value add like   [-100828282828, -1001802204511]
     
 
 class Txt:
